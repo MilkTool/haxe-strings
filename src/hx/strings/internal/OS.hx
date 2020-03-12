@@ -25,6 +25,6 @@ class OS {
         #else
         var os = Sys.systemName();
         #end
-        ~/win/i.match(os);
+        ~/^win/i.match(os);
     }
 }
