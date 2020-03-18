@@ -32,12 +32,12 @@ class Macros {
             def.exists("js") ||
             def.exists("python")
         ) {
-            trace("[INFO] Setting compiler define 'native_utf8'.");
+            // trace("[INFO] Setting compiler define 'native_utf8'.");
             Compiler.define("native_utf8");
         }
 
         if (def.exists("java") && !def.exists("jvm")) {
-            trace("[INFO] Setting compiler define 'java_src'.");
+            // trace("[INFO] Setting compiler define 'java_src'.");
             Compiler.define("java_src");
         }
         return macro {}
